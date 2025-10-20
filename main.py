@@ -7,16 +7,15 @@ def guess_number():
     #Создаю цикл
  while True:
      try:
-            guess = int(input("Ваш ответ: "))
-            attempts += 1
-            if guess < number:
-                print("Слишком мало!")
-            elif guess > number:
-                print("Слишком много!")
-            else:
-                print(f"Поздравляю! Вы угадали число за {attempts} попыток.")
-                break
-        except ValueError:
-            print("Пожалуйста, введите число.")
-
+         guess = int(input("Ваш ответ: "))
+         attempts += 1
+         if guess < number:
+             print("Слишком мало!")
+         elif guess > number:
+             print("Слишком много!")
+         else:
+             print(f"Поздравляю! Вы угадали число за {attempts} попыток.")
+             break
+     except ValueError:
+         print("Пожалуйста, введите число.")
 guess_number()
