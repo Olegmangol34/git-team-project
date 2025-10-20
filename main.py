@@ -16,3 +16,7 @@ def guess_number():
             else:
                 print(f"Поздравляю! Вы угадали число за {attempts} попыток.")
                 break
+        except ValueError:
+            print("Пожалуйста, введите число.")
+
+guess_number()
